@@ -271,9 +271,9 @@
 
     #entryWrap{padding: 100px 0;}
     #entryWrap .title{margin-bottom: 50px;}
-    #entryWrap p span{max-width: 350px; width: auto;}
+    #entryWrap p span br{display: none;}
     #entryWrap h4{margin-bottom: 50px; font-size: 40px;}
-    #entryWrap p span{padding: 0 60px;}
+    #entryWrap p span{padding: 0 60px; max-width: 350px; width: auto; word-break: keep-all;}
     #entryWrap p{font-size: 16px;}
     #entryWrap p span::after,
     #entryWrap p span::before{width: 40px;}
