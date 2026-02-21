@@ -13,7 +13,7 @@ $(function () {
     }
   });
 
-  $('.menu a').click(function (e) {
+  $('#headerWrap .menu a').click(function (e) {
     e.preventDefault();
 
     let target = $(this).attr('href');
@@ -22,6 +22,10 @@ $(function () {
     $('html, body').animate({
       scrollTop: moveTop
     }, 800);
+
+    $('#mobileMenu').removeClass('active');
+    $('.bg').removeClass('active');
+    $('body').removeClass('of');
 
   });
 
