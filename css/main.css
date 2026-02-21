@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* 공통 - 제목 */
+.title{font-weight: 700; font-size: 32px; text-align: center; color: #fff; text-transform: uppercase;}
+
+@media (max-width: 1199px){
+
+    .title{font-size: 26px;}
+
+}
+
+@media (max-width: 767px){
+
+    .title{font-size: 24px;}
+
+}
+
+@media (max-width: 480px){
+
+    .title{font-size: 20px;}
+
+}
+
+/* 공통 - 버튼 */
+.btn{padding: 13px 10px; width: 326px; display: block; font-size: 18px; color: #fff; font-weight: 700; border: 3px solid #fff; border-radius: 50px; text-align: center; transition: all .3s;}
+.btn:hover{background-color: #fff; color: #1a1a1a;}
+
+@media (max-width: 1199px){
+
+    .btn{width: 180px; font-size: 16px;}
+
+}
+
+@media (max-width: 767px){
+
+    .btn{border: 2px solid #fff;}
+
+}
+
+@media (max-width: 480px){
+
+    .btn{width: 130px; font-size: 14px;}
+
+}
+
+
+/* 비주얼 영역 */
+#visualWrap{position: relative; height: 100vh;}
+#visualWrap .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#visualWrap .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#visualWrap .textBox .box{padding-left: 36px;}
+#visualWrap .textBox{margin-bottom: 90px; padding-top: 9.3%; position: relative;}
+#visualWrap .textBox h2{margin-bottom: 70px; font-size: 123px; color: #fff; font-family: 'ArchivoBlack'; text-transform: uppercase; line-height: 0.8;}
+#visualWrap .textBox h2 span{display: block; overflow: hidden;}
+#visualWrap .textBox h2 span em{display: block; transform: translateY(100px);}
+#visualWrap .textBox h2 span em{display: block; transform: translateY(100px);}
+#visualWrap.active .textBox h2 span em{transform: translateY(0); transition: all .65s;}
+#visualWrap.active .textBox h2 span:nth-child(1) em{transition-delay: .3s;}
+#visualWrap.active .textBox h2 span:nth-child(2) em{transition-delay: .6s;}
+#visualWrap.active .textBox h2 span:nth-child(3) em{transition-delay: .9s;}
+#visualWrap.active .textBox p{opacity: 1; transition: all .65s; transition-delay: 1.2s;}
+#visualWrap.active .linkBox{opacity: 1; transition: all .65s; transition-delay: 1.6s;}
+#visualWrap .textBox p{opacity: 0; font-weight: 600; font-size: 20px; color: #fff;}
+#visualWrap .textBox p span{margin-top: 30px; display: block; font-size: 12px; color: #fff; font-weight: 600; text-transform: uppercase;}
+#visualWrap .textBox p span strong{font-weight: 800;}
+#visualWrap .linkBox{opacity: 0; position: relative; margin-left: 36px;}
+#visualWrap .linkBox .box{display: flex; gap: 0 24px;}
+
+@media (max-width: 1199px){
+
+    #visualWrap .textBox .box{padding: 0;}
+    #visualWrap .textBox h2{font-size: 70px;}
+    #visualWrap .textBox p{font-size: 18px;}
+    #visualWrap .textBox{padding-top: 150px;}
+    #visualWrap.active .linkBox{margin: 0;}
+
+}
+
+@media (max-width: 767px){
+
+    #visualWrap .textBox h2{font-size: 55px;}
+    #visualWrap .textBox p{font-size: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+    #visualWrap{padding-bottom: 50px;}
+    #visualWrap .textBox{height: 100%;}
+    #visualWrap .textBox h2{margin-bottom: 38px; font-size: 35px;}
+    #visualWrap .textBox p{font-size: 14px;}
+    #visualWrap{display: flex; flex-direction: column;}
+    #visualWrap .linkBox{margin-top: auto;}
+    #visualWrap .linkBox .box{gap: 0 15px; justify-content: center;}
+
+}
+
+/* 소개영역 */
+#aboutWrap{padding: 110px 0; background-color: #121212;}
+#aboutWrap .title{margin-bottom: 55px;}
+#aboutWrap .tit{margin-bottom: 55px; color: #fff; text-align: center; font-weight: 800; font-size: 54px; word-break: keep-all;}
+#aboutWrap .text{font-size: 23px; color: #fff; font-weight: 500; text-align: center;}
+#aboutWrap img{display: block; margin: 80px auto;}
+#aboutWrap .box {text-align: center;}
+#aboutWrap .box span{position: relative; text-align: center; font-weight: 800; color: #fff; font-size: 29px;}
+#aboutWrap .box span::after{content: ''; position: absolute; left:0; bottom: -2px; right:0; height: 3px; background-color: #fff;}
+
+@media (max-width: 1199px){
+
+    #aboutWrap .tit{font-size: 42px;}
+    #aboutWrap .text{font-size: 20px;}
+    #aboutWrap .box span{font-size: 28px;}
+    #aboutWrap img{margin: 50px auto;}
+
+}
+
+@media (max-width: 767px){
+
+    #aboutWrap .title{margin-bottom: 40px;}
+    #aboutWrap .tit{margin-bottom: 40px; font-size: 32px;}
+    #aboutWrap .text{font-size: 16px;}
+    #aboutWrap img{width: 50px;}
+    #aboutWrap .box span{font-size: 22px;}
+
+}
+
+@media (max-width: 480px){
+
+    #aboutWrap .tit{font-size: 24px;}
+    #aboutWrap .text br{display: none;}
+    #aboutWrap img{width: 35px;}
+    #aboutWrap .box span{font-size: 18px;}
+    
+}
+
+/* 요구사항영역 */
+#requirementWrap{padding: 110px 0; background-color: #1a1a1a;}
+#requirementWrap .title{margin-bottom: 100px;}
+#requirementWrap .box:last-child{margin-bottom: 0;}
+#requirementWrap .box{margin-bottom: 110px;}
+#requirementWrap .box h4{position: relative; margin-bottom: 60px; padding-left: 32px; color: #fff; font-size: 22px; color: #fff;}
+#requirementWrap .box h4::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:0; width: 20px; height: 21px; background: url(../images/icon02.png)no-repeat center /contain;}
+#requirementWrap .box01 .list{display: flex; gap: 0 24px;}
+#requirementWrap .box01 .list li{flex: 1; gap: 20px 0; display: flex; flex-direction: column; justify-content: center; align-items: center;  height: 319px; border: 1px solid #888; text-align: center;}
+#requirementWrap .box01 .list li span{display: block; font-weight: 800; font-size: 68px; color: #fff; line-height: 1;}
+#requirementWrap .box01 .list li p{font-size: 32px; color: #fff; line-height: 1.2;}
+#requirementWrap .box02 .list{display: flex; flex-wrap: wrap; gap: 25px 2.2%;}
+#requirementWrap .box02 .list li{width: 48.9%; padding: 32px 20px 32px 40px; border: 1px solid #888;}
+#requirementWrap .box02 .list li p{font-size: 20px; color: #fff;}
+#requirementWrap .box03 .list li{margin-bottom: 15px; position: relative; padding-left: 30px; color: #fff;}
+#requirementWrap .box03 h4{margin-bottom: 27px;}
+#requirementWrap .box03 .list li:last-child{margin-bottom: 0;}
+#requirementWrap .box03 .list li::before{content: ''; width: 10px; height: 10px; position: absolute; top:6px; left:6px; background: url(../images/icon02.png)no-repeat center / contain;}
+
+@media (max-width: 1199px){
+
+    #requirementWrap .box01 .list{flex-direction: column; gap: 20px 0;}
+    #requirementWrap .box01 .list li{flex: none; height: 250px;}
+    #requirementWrap .box01 .list li span{font-size: 50px;}
+    #requirementWrap .box01 .list li p{font-size: 26px;}
+    #requirementWrap .box02 .list li p{font-size: 18px;}
+    #requirementWrap .box h4{margin-bottom: 35px; font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+    #requirementWrap .title{margin-bottom: 80px;}
+    #requirementWrap .box01 .list li span{font-size: 36px;}
+    #requirementWrap .box01 .list li p{font-size: 24px;}
+    #requirementWrap .box02 .list li{padding: 20px; width: 100%; text-align: center;}
+    #requirementWrap .box02 .list li p{font-size: 16px;}
+    #requirementWrap .box h4{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+    #requirementWrap .box01 .list li{height: 200px;}
+    #requirementWrap .box01 .list li span{font-size: 28px;}
+    #requirementWrap .box01 .list li p{font-size: 20px;}
+
+}
+
+/* 절차 영역 */
+#processWrap{padding: 110px 0;}
+#processWrap .title{margin-bottom: 56px; color: #000;}
+#processWrap .processList{position: relative; margin-bottom: 134px;}
+#processWrap .processList::after{content: ''; width: 71px; height: 41px; position: absolute; bottom: -90px; left: 50%; transform: translateX(-50%); background: url(../images/arrow_icon01.png)no-repeat center / contain;}
+#processWrap .processList li{margin-bottom: 36px; padding: 43px 20px; display: flex; align-items: center; border: 6px solid #000;}
+#processWrap .processList li:last-child{margin-bottom: 0;}
+#processWrap .processList li .stepBox{flex-shrink: 0; width: 188px; line-height: 1; letter-spacing: -1px; text-align: center;}
+#processWrap .processList li .stepBox .box{display: inline-block; text-align: left;}
+#processWrap .processList li .stepBox span{display: block; margin-bottom: 10px; font-weight: 800; font-size: 32px; color: #000;}
+#processWrap .processList li .stepBox em{display: block; font-weight: 800; font-size: 32px; color: #000;}
+#processWrap .processList li .textBox h4{font-size: 25px; font-weight: 800; color: #000;}
+#processWrap .processList li .textBox p{font-weight: 600; color: #000;}
+#processWrap .text{padding: 43px 20px; font-size: 30px; color: #000; border: 6px solid #000; font-weight: 800; text-align: center; letter-spacing: -1px; word-break: keep-all;}
+
+@media (max-width: 1199px){
+
+    #processWrap .processList li .stepBox span{font-size: 26px;}
+    #processWrap .processList li .stepBox em{font-size: 24px;}
+    #processWrap .processList li .textBox h4{font-size: 22px;}
+    #processWrap .text{font-size: 26px;}
+
+}
+
+@media (max-width: 767px){
+
+    #processWrap .processList li .stepBox .box{padding-top: 7px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100px; height: 100px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0,0,0,.2);}
+    #processWrap .processList li .stepBox span{font-size: 22px;}
+    #processWrap .processList li .stepBox em{font-size: 22px;}
+    #processWrap .processList li .textBox h4{font-size: 20px;}
+    #processWrap .text{font-size: 22px;}
+
+    #processWrap .processList{margin-bottom: 80px;}
+    #processWrap .processList li{flex-direction: column; gap: 30px 0;}
+    #processWrap .processList li .stepBox{width: 100%; text-align: center;}
+    #processWrap .processList li .stepBox em{text-align: center;}
+    #processWrap .processList li .textBox h4{text-align: center;}
+    #processWrap .processList li .textBox p{text-align: center;}
+    #processWrap .processList::after{bottom: -53px; width: 41px; height: 21px;}
+
+ }
+
+ @media (max-width: 480px){
+
+    #processWrap .processList li .stepBox .box{width: 80px; height: 80px;}
+    #processWrap .text,
+    #processWrap .processList li{border: 3px solid #000;}
+    #processWrap .processList li .stepBox span{margin-bottom: 3px; font-size: 18px;}
+    #processWrap .processList li .stepBox em{font-size: 18px;}
+    #processWrap .processList li .textBox h4{font-size: 16px;}
+    #processWrap .text{font-size: 20px;}
+
+ }
+
+ /* 참가 영역 */
+#entryWrap{padding: 130px 0 180px; background: url(../images/bg02.jpg)no-repeat center / cover;}
+#entryWrap .title{margin-bottom: 120px;}
+#entryWrap h4{margin-bottom: 80px; text-align: center; text-transform: uppercase; font-size: 124px; font-family: 'ArchivoBlack'; color: #fff; letter-spacing: -1px; line-height: 1.2; } 
+#entryWrap p{margin-bottom: 80px; font-size: 35px; text-align: center; color: #fff;}
+#entryWrap p span{width: 756px; margin:0 auto 50px; display: block; position: relative;}
+#entryWrap p span::before{content: ''; width: 108px; height: 38px; position: absolute; top: 50%; transform: translateY(-50%); left:0; background: url(../images/icon03.png)no-repeat center / contain;}
+#entryWrap p span::after{content: ''; width: 108px; height: 38px; position: absolute; top: 50%; transform: translateY(-50%) rotate(180deg); right:0; background: url(../images/icon03.png)no-repeat center / contain;}
+#entryWrap .btn{margin: 0 auto;}
+
+@media (max-width: 1199px){
+
+    #entryWrap .title{margin-bottom: 90px;}
+    #entryWrap p span{width: 650px;}
+    #entryWrap h4{margin-bottom: 70px; font-size: 80px;}
+    #entryWrap p{font-size: 26px;}
+
+}
+
+@media (max-width: 767px){
+
+    #entryWrap{padding: 130px 0;}
+    #entryWrap .title{margin-bottom: 60px;}
+    #entryWrap p span{width: 450px;}
+    #entryWrap h4{margin-bottom: 50px; font-size: 60px;}
+    #entryWrap p{font-size: 18px;}
+    #entryWrap p span::after,
+    #entryWrap p span::before{width: 80px;}
+
+}
+
+@media (max-width: 480px){
+
+    #entryWrap{padding: 100px 0;}
+    #entryWrap .title{margin-bottom: 50px;}
+    #entryWrap p span{max-width: 350px; width: auto;}
+    #entryWrap h4{margin-bottom: 50px; font-size: 40px;}
+    #entryWrap p span{padding: 0 60px;}
+    #entryWrap p{font-size: 16px;}
+    #entryWrap p span::after,
+    #entryWrap p span::before{width: 40px;}
+
+}
